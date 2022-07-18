@@ -1,2 +1,49 @@
-<p>Componente de Login</p>
-<button type="button" class="btn btn-outline-primary">Boton log in</button>
+<div class="container px-5 py-5">
+    <div class="row justify-content-between">
+        <div class="col-lg-6">
+            <p class="fs-4">¿Ya estás registrado?</p>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-muted">Correo electrónico</label>
+                <input type="email" style="height: 56px;" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-muted">Contraseña</label>
+                <input type="email" style="height: 56px;" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label text-muted" for="flexCheckDefault">
+                  Mostrar Contraseña
+                </label>
+            </div>
+            <div class="align-items-center mb-3 pt-4 row">
+                <div class="col-lg-5">
+                    <button type="button" style="width: 100%;" class="btn btn-dark py-2">Iniciar sesión</button>
+                </div>
+                <div class="col-lg-7">
+                    <button type="button" style="width: 100%;color: black;" class="btn btn-link">¿Has olvidado tu contraseña?</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <p class="fs-4">¿Eres nuevo por aquí?</p>
+            <p>
+                Crea tu cuenta y podrás:
+            </p>
+            <ul>
+                <li>Hacer seguimiento de tus pedidos y acceder a tu historial de compras.</li>
+                <li>Gestionar tu información personal.</li>
+                <li>Obtener 10% dscto en tu próxima compra.</li>
+                <li>Recibir ofertas y promociones especiales.</li>
+            </ul>
+            <div class="align-items-center mb-3 pt-4 row">
+                <div class="col-lg-5">
+                    <button type="button" style="width: 100%;" class="btn btn-dark py-2">Crea una cuenta</button>
+                </div>
+                <div class="col-lg-7">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-icono-flotante [nombreIcono]="nombreIcono"></app-icono-flotante>
