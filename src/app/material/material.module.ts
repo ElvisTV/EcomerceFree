@@ -7,4 +7,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatSidenavModule
   ]
 })
-export class MaterialModule { }
+export class MaterialModule {
+
+ }
