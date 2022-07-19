@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ErrorPageComponent } from './shared/error-page/error-page.component';
-import { AuthModule } from './auth/auth.module';
+import { HomeComponent } from './shared/pages/home/home.component';
+import { ErrorPageComponent } from './shared/pages/error-page/error-page.component';
+
 
 const routes: Routes = [
   {
@@ -10,12 +11,16 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then( m => m.AuthModule  )
   },
   {
-    path: '404',
-    component: ErrorPageComponent,
+    path: 'productos',
+    loadChildren: () => import('./productos/productos.module').then( m => m.ProductosModule )    
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
   },
   {
     path: '**',
-    component: ErrorPageComponent
+    component: HomeComponent
   }
 ];
 
