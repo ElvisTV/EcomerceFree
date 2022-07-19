@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AuthRoutingModule } from './auth-routing.module';
-import { IconoFlotanteComponent } from '../componen/icono-flotante/icono-flotante.component';
+import { IconoFlotanteComponent } from './icono-flotante/icono-flotante.component';
 
 
 
