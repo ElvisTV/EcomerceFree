@@ -1,0 +1,22 @@
+<ng-template [ngIf]="!estado" [ngIfElse]="modal">    
+    <a routerLink="{{link}}" class="px-3 text-reset">
+        <i class="bi {{tipo}} fs-4"></i>
+    </a>
+</ng-template>
+<ng-template #modal>
+    <a href="" class="px-3 text-reset" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+        <i class="bi {{tipo}} fs-4"></i>
+    </a>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="m-0 modal-dialog mw-100">
+          <div class="border-0 modal-content rounded-0">
+            <div class="fs-2 m-5 modal-body p-5">
+                <div class="mb-3">
+                    <label for="buscar" class="form-label">Buscar</label>
+                    <input (ngModelChange)="escribir()" type="text" class="fs-3 form-control" id="buscar" [(ngModel)]="buscar">
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</ng-template>
