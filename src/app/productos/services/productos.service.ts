@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
+import { Producto } from '../interfaces/product.interface';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +25,12 @@ export class ProductosService {
 
   constructor( private http: HttpClient ) { }  
 
-  getProductos() {
-    return this.http.get(`${this.baseUrl}/v1/curated?page=2&per_page=40`, { headers: this.headers_  } );
+  getProductos(): Observable<Producto[]> {
+    // return this.http.get<Producto[]>(`${this.baseUrl}/v1/curated?page=2&per_page=40`, { headers: this.headers_  } );
+    return this.http.get<Producto[]>(`${this.baseUrl}/v1/curated`, { headers: this.headers_  } );
+  }
+
+  getProductos_() : Observable<Producto> {
+    return this.http.get<Producto>(`${this.baseUrl}/v1/curated`, { headers: this.headers_  })
   }
 }

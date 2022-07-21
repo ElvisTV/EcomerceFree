@@ -1,0 +1,24 @@
+<p>produto-tajeta works!</p>
+
+
+<mat-card >
+    <mat-card-header>
+        <mat-card-title> {{ producto.id }} </mat-card-title>
+        <mat-card-subtitle> {{ producto.id }} </mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image [src] = "producto | image " >
+    // console.log( this.objetoInfo.photos[0].id )
+
+
+    <mat-card-content>
+        <h3> {{ producto.id }} </h3>
+        <p>
+            <strong> Primera aparición </strong> {{ producto.id }}
+            <br>
+            <strong> Personajes: </strong> {{ producto.id }}
+        </p>
+    </mat-card-content>
+   
+
+</mat-card>

@@ -10,6 +10,8 @@ import { ProductoComponent } from './pages/producto/producto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { DetalleproductoComponent } from './pages/detalleproducto/detalleproducto.component';
+import { ProdutoTajetaComponent } from './components/produto-tajeta/produto-tajeta.component';
+import { ImagePipe } from './pipes/image.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DetalleproductoComponent } from './pages/detalleproducto/detalleproduct
     ProductoComponent,
     HomeComponent,
     ListadoComponent,
-    DetalleproductoComponent
+    DetalleproductoComponent,
+    ProdutoTajetaComponent,
+    ImagePipe
   ],
   imports: [
     CommonModule,
