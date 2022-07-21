@@ -1,28 +1,12 @@
 <h1>
     Pantalla del componenete de listado
 </h1>
-
 <div fxLayout="row wrap"
     fxLayout.xs="column"
     fxLayoutAlign="center"
-    fxLayoutGap="20px">
-    <div fxFlex="20" 
-        fxFlex.lg="15"
-        fxFlex.sm="30"
-        *ngFor="let valor of productos; let i"> 
+    fxLayoutGap="20px grid ">
+    <div *ngFor="let valor of productos; let i"> 
         <app-produto-tajeta [producto]="valor" > </app-produto-tajeta>
 
     </div>    
-
-   
 </div>
-
-
-
-<!-- <ul>
-    <li *ngFor="let valor of productos" >
-        {{ valor.id }}
-       
-    </li>
-</ul>
- -->

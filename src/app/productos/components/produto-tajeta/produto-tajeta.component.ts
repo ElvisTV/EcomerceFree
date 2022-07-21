@@ -7,6 +7,7 @@ import { Producto, Photo } from '../../interfaces/product.interface';
   styles: [`
     mat-card {
       margin-top: 20px;
+      width: 300px;
     }
   `]
 })

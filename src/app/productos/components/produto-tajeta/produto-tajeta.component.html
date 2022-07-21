@@ -1,7 +1,7 @@
 <p>produto-tajeta works!</p>
 
 
-<mat-card >
+<mat-card  >
     <mat-card-header>
         <mat-card-title> {{ producto.id }} </mat-card-title>
         <mat-card-subtitle> {{ producto.id }} </mat-card-subtitle>
@@ -19,6 +19,17 @@
             <strong> Personajes: </strong> {{ producto.id }}
         </p>
     </mat-card-content>
-   
+    <mat-card-actions>
+        <button mat-button 
+            color="warn" 
+            [routerLink]="" >
+            Leer más...
+        </button>
+        <button mat-button 
+            color="info"
+            [routerLink]="" >
+            Editar
+        </button>
+    </mat-card-actions>
 
 </mat-card>
