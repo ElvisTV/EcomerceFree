@@ -29,13 +29,13 @@ const routes: Routes = [
         component: BuscarComponent
       },
       {
-        path: ':id',
-        component: ProductoComponent
-      },
-      {
         path: 'detalleproducto',
         component: DetalleproductoComponent
       },
+      {
+        path: ':id',
+        component: ProductoComponent
+      },      
       {
         path: '**',
         redirectTo: 'listado'

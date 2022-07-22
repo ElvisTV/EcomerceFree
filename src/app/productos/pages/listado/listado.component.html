@@ -1,8 +1,20 @@
 <h1>
     Pantalla del componenete de listado
 </h1>
+<div class="row row-cols-1 row-cols-md-4 g-4">    
+    <div 
+        *ngFor="let valor of productos; let i">       
+        <app-produto-tajeta [producto]="valor" > </app-produto-tajeta>
 
-<div fxLayout="row wrap"
+    </div> 
+</div>
+
+
+
+
+
+
+<!-- <div fxLayout="row wrap"
     fxLayout.xs="column"
     fxLayoutAlign="center"
     fxLayoutGap="20px">
@@ -16,4 +28,4 @@
     </div>    
 
 </div>
-
+ -->

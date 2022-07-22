@@ -6,9 +6,7 @@ import { tap } from 'rxjs';
   selector: 'app-listado',
   templateUrl: './listado.component.html',
   styles: [`
-    mat-card {
-      margin-top: 20px;
-    }
+   
   `]
 })
 export class ListadoComponent implements OnInit {
@@ -23,6 +21,7 @@ export class ListadoComponent implements OnInit {
    
     this.productosService.getProductos_()
         .subscribe( (objeto) => {
+          console.log(objeto);
           this.objetoInfo = objeto;
           this.productos = this.objetoInfo.photos;
           // console.log( this.objetoInfo.photos[0].id )

@@ -5,8 +5,8 @@ import { Producto, Photo } from '../../interfaces/product.interface';
   selector: 'app-produto-tajeta',
   templateUrl: './produto-tajeta.component.html',
   styles: [`
-    mat-card {
-      margin-top: 20px;
+    .col {
+      height: 100%;
     }
   `]
 })
