@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ProductosRoutingModule } from './productos-routing.module';
 import { MaterialModule } from '../material/material.module';
 
@@ -12,6 +11,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { DetalleproductoComponent } from './pages/detalleproducto/detalleproducto.component';
 import { ProdutoTajetaComponent } from './components/produto-tajeta/produto-tajeta.component';
 import { ImagePipe } from './pipes/image.pipe';
+
 
 @NgModule({
   declarations: [
