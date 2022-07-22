@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductosRoutingModule } from './productos-routing.module';
 import { MaterialModule } from '../material/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
@@ -26,6 +27,7 @@ import { ImagePipe } from './pipes/image.pipe';
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
     MaterialModule,
     ProductosRoutingModule
   ]
