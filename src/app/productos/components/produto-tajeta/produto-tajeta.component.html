@@ -1,22 +1,16 @@
 <mat-card class="mat-elevation-z4" >
-    <mat-card-header>
-        <mat-card-title> {{ producto.id }} </mat-card-title>
-        <mat-card-subtitle> {{ producto.id }} </mat-card-subtitle>
-    </mat-card-header>
+    <!-- <mat-card-header>
+        <mat-card-title> producto </mat-card-title>
+        <mat-card-subtitle> producto </mat-card-subtitle>
+    </mat-card-header> -->
 
     <img mat-card-image [src] = "producto | image " >
-    // console.log( this.objetoInfo.photos[0].id )
-
-
     <mat-card-content>
-        <h3> {{ producto.id }} </h3>
-        <p>
-            <strong> Primera aparición </strong> {{ producto.id }}
-            <br>
-            <strong> Personajes: </strong> {{ producto.id }}
-        </p>
+        <p> <strong> Ecomerce Free </strong> </p>
+        <p> {{ producto.photographer }} </p>
+        <p> <strong> $ </strong> {{ (producto.height ) | number: '1.2-2' }} </p>
     </mat-card-content>
-    <mat-card-actions>
+    <!-- <mat-card-actions>
         <button mat-button 
             color="warn" 
             [routerLink]="" >
@@ -27,6 +21,6 @@
             [routerLink]="" >
             Editar
         </button>
-    </mat-card-actions>
+    </mat-card-actions> -->
 
 </mat-card>
