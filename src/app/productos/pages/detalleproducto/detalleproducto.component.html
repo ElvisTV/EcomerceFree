@@ -1,1 +1,46 @@
-<p> VISTA DE DETALLE DE PRODUCTO </p>
+<div class="">
+    <div class="row">
+        <div class="col-lg-7">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 mx-4 my-4">
+            <p class="fs-6 text-muted my-1 fw-semibold">{{marca}}</p>
+            <p class="fs-5 my-1">Polera regular fit verde</p>
+            <p class="fs-6 my-1 fw-light">SKU PPR09AE0AZ4</p>
+            <p class="fs-5 my-1">
+                <ng-template [ngIf]="condicion"><span class="text-decoration-line-through text-muted">S/ 420.00 </span> -</ng-template>
+                S/ 300.00
+            </p>
+            <p class="fs-6 mt-3">Selecciona tu talla</p>
+            <div>
+                <div class="row">
+                  <div class="col p-1">
+                    <input type="radio" class="btn-check" name="talla" id="btn-check-outlined" autocomplete="off">
+                    <label class="btn btn-outline-primary px-4 py-2" for="btn-check-outlined">S</label><br>        
+                  </div>
+                  <div class="col p-1">
+                    <input type="radio" class="btn-check" name="talla" id="btn-check-outlined2" autocomplete="off">
+                    <label class="btn btn-outline-primary px-4 py-2" for="btn-check-outlined2">M</label><br>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <app-icono-flotante [nombreIcono]="nombreIcono"></app-icono-flotante>

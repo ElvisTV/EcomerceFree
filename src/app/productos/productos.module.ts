@@ -11,6 +11,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { DetalleproductoComponent } from './pages/detalleproducto/detalleproducto.component';
 import { ProdutoTajetaComponent } from './components/produto-tajeta/produto-tajeta.component';
 import { ImagePipe } from './pipes/image.pipe';
+import { IconoFlotanteComponent } from '../auth/icono-flotante/icono-flotante.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ImagePipe } from './pipes/image.pipe';
     ListadoComponent,
     DetalleproductoComponent,
     ProdutoTajetaComponent,
-    ImagePipe
+    ImagePipe,
+    IconoFlotanteComponent
   ],
   imports: [
     CommonModule,
